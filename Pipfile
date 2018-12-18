@@ -1,15 +1,11 @@
 [[source]]
-url = "https://pypi.org/simple"
-verify_ssl = true
+url = "https://pypi.douban.com/simple"
+verify_ssl = false
 name = "pypi"
 
 [packages]
-numpy = "*"
-scipy = "*"
-scikit-learn = "*"
-matplotlib = "*"
-pandas = "*"
-quandl = "*"
+tensorflow = "*"
+keras = "*"
 
 [dev-packages]
 
