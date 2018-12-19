@@ -63,3 +63,6 @@ plt.ylabel('Loss')
 plt.legend()
 
 plt.show()
+
+results = model.evaluate(X_test, y_test)
+print(f'{model.metrics_names}: {results}')
