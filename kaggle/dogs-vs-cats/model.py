@@ -1,5 +1,7 @@
 from split_data import dataset_dir, small_train_dir, val_dir
 
+import os
+
 from keras import models, layers, optimizers
 from keras.preprocessing import image
 from keras.preprocessing.image import ImageDataGenerator
