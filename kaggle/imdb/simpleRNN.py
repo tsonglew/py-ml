@@ -1,4 +1,5 @@
-from keras import preprocessing
+import numpy as np
+from keras import preprocessing, callbacks
 from keras.layers import Embedding, Flatten, Dense, SimpleRNN
 from keras.datasets import imdb
 from keras.models import Sequential
@@ -27,5 +28,11 @@ history = model.fit(
     y_train,
     epochs=10,
     batch_size=128,
-    validation_split=0.2
+    validation_split=0.2,
+    callbacks=[
+        callbacks.TensorBoard(
+            log_dir='log_dir',
+            histogram_freq=1
+        )
+    ]
 )
